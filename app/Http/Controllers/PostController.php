@@ -98,7 +98,7 @@ class PostController extends Controller
     {
         $this->authorize('delete',$post);
         $post->delete();
-        return redirect('home');
+        return redirect('/post');
     }
     public function validator()
     {
